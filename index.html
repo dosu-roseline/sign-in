@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>SignUp</title>
+</head>
+<body>
+    <div class="body">
+        <div class="signup">
+            <div class="container">
+                <div class="signup__text">
+                    <h1 class="signup__heading">Create Account</h1>
+                    <p class="signup__title">It's free and hardly takes more than 30 seconds.</p>
+                </div>
+
+                <form class="signup--form">
+                    <div class="form1">
+                        <div class="form form--1">
+                            <img src="img/user.svg" alt="">
+                            <input type="text" placeholder="Username" id="username">
+                        </div>
+                        <p id="usernameError" class="errors"></p>
+                    </div>
+                    <div class="form2">
+                        <div class="form form--2">
+                            <img src="img/paper-plane.svg" alt="">
+                            <input type="email" placeholder="Email Adress" id="email">
+                        </div>
+                        <p id="emailError" class="errors"></p>
+                    </div>
+                    <div class="form3">
+                        <div class="form form--3">
+                            <img src="img/lock.svg" alt="">
+                            <input type="password" placeholder="Password" id="password">
+                            <img id="passwordEye" src="img/eye.svg" style="cursor: pointer;">
+                        </div>
+                        <p id="passwordError" class="errors"></p>
+                    </div>
+                    <div class="form4">
+                        <div class="form form--4">
+                            <img src="img/lock.svg" alt="">
+                            <input type="password" placeholder="Confirm Password" id="confirm_password">
+                            <img id="confirmEye" src="img/eye.svg" style="cursor: pointer;">
+                        </div>
+                        <p id="confirm_passwordError" class="errors"></p>
+                    </div>
+                </form>
+
+                <button class="btn" id="submit">Sign Up</button>
+                <div class="signup__text">
+                    <p class="text">By clicking the Sign Up button you agree to our </p>
+                    <p class="text"><a href="#" class="text-link">Terms & Conditions</a>, and <a href="#" class="text-link">Private Policy</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
